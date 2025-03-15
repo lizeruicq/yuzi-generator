@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/yuzi-generator.iml" filepath="$PROJECT_DIR$/yuzi-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuzi-generator-basic/yuzi-generator-basic.iml" filepath="$PROJECT_DIR$/yuzi-generator-basic/yuzi-generator-basic.iml" />
     </modules>
   </component>
 </project>
