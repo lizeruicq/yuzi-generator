@@ -16,7 +16,7 @@ public class MainTemplateConfig {
     /**
      * 作者注释
      */
-    private String author = "zerioooo";
+    private String author = "yupi";
 
     /**
      * 输出信息

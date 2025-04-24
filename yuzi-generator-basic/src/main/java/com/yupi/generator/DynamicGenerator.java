@@ -1,5 +1,6 @@
 package com.yupi.generator;
 
+import cn.hutool.core.io.FileUtil;
 import com.yupi.model.MainTemplateConfig;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -52,9 +53,15 @@ public class DynamicGenerator {
 
         // 创建数据模型
         MainTemplateConfig mainTemplateConfig = new MainTemplateConfig();
-        mainTemplateConfig.setAuthor("zerui");
+        mainTemplateConfig.setAuthor("yupi");
         mainTemplateConfig.setLoop(false);
         mainTemplateConfig.setOutputText("求和结果：");
+
+
+        // 文件不存在则创建文件和父目录
+        if (!FileUtil.exist(outputPath)) {
+            FileUtil.touch(outputPath);
+        }
 
         // 生成
         Writer out = new FileWriter(outputPath);

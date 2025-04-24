@@ -7,13 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="yuzi-geneerator-maker" />
         <module name="yuzi-generator-basic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="yuzi-geneerator-maker" target="8" />
-      <module name="yuzi-generator-basic" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
